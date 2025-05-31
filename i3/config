@@ -163,3 +163,37 @@ bar {
 
 # wallpaper
 exec_always bash ~/.scripts/set_bg.sh
+
+# border width
+set $borderWidth 3
+default_border pixel $borderWidth
+default_floating_border pixel $borderWidth
+
+# window gaps
+gaps inner 6px
+
+# colors
+set $nord0  #2e3440
+set $nord1  #3b4252
+set $nord2  #434c5e
+set $nord3  #4c566a
+set $nord4  #d8dee9
+set $nord5  #e5e9f0
+set $nord6  #eceff4
+set $nord7  #8fbcbb
+set $nord8  #88c0d0
+set $nord9  #81a1c1
+set $nord10 #5e81ac
+set $nord11 #bf616a
+set $nord12 #d08770
+set $nord13 #ebcb8b
+set $nord14 #a3be8c
+set $nord15 #b48ead
+
+# class                 border  backgr. text    indicator child_border
+client.focused          $nord3 #285577 #ffffff $nord4   $nord3
+client.focused_inactive $nord0 #5f676a #ffffff $nord4   $nord0
+client.unfocused        $nord0 #222222 #888888 $nord4   $nord0
+client.urgent           $nord11 #900000 #ffffff $nord4   $nord11
+client.placeholder      #000000 #0c0c0c #ffffff $nord4   #0c0c0c
+client.background       $nord0
