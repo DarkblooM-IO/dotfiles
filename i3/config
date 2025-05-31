@@ -158,3 +158,8 @@ bindsym $mod+r mode "resize"
 bar {
   status_command i3status
 }
+
+### COSMETICS ###
+
+# wallpaper
+exec_always bash ~/.scripts/set_bg.sh
