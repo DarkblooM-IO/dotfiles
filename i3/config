@@ -121,19 +121,24 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+# exit i3
+#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+mode "[S]hutdown [R]eboot [L]og-out" {
+  bindsym s exec --no-startup-id poweroff
+  bindsym r exec --no-startup-id reboot
+  bindsym l exec --no-startup-id i3-msg exit
+  bindsym Escape mode "default"
+}
+bindsym $mod+Shift+e mode "[S]hutdown [R]eboot [L]og-out"
 
-# resize window
+# resize mode
 mode "resize" {
   bindsym Left  resize grow   width  10 px or 10 ppt
   bindsym Down  resize shrink height 10 px or 10 ppt
   bindsym Up    resize grow   height 10 px or 10 ppt
   bindsym Right resize shrink width  10 px or 10 ppt
-  
   bindsym Escape mode "default"
 }
-
 bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
