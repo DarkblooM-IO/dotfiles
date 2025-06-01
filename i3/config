@@ -169,6 +169,9 @@ set $borderWidth 3
 default_border pixel $borderWidth
 default_floating_border pixel $borderWidth
 
+# window title alignment
+title_align center
+
 # window gaps
 gaps inner 6px
 
