@@ -150,6 +150,11 @@ workspace $ws10 output HDMI-1-0 eDP-1
 assign [class="^steam$"]   $ws7
 assign [class="^vesktop$"] $ws10
 
+# app-specific layouts
+for_window [class="^love$"] floating enable
+for_window [class="^Nemo$"] floating enable
+for_window [class="^Lxappearance$"] floating enable
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace
