@@ -158,6 +158,7 @@ for_window [class="^love$"]          floating enable
 for_window [class="^Nemo$"]          floating enable
 for_window [class="^Lxappearance$"]  floating enable
 for_window [class="^PrismLauncher$"] floating enable
+for_window [class="^pico8$"]         floating enable
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
