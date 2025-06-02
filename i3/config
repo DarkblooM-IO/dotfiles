@@ -170,6 +170,7 @@ exec --no-startup-id bash ~/.scripts/launch_polybar.sh
 
 exec --no-startup-id flameshot
 exec --no-startup-id vesktop
+exec --no-startup-id signal-desktop
 exec --no-startup-id steam -silent
 
 ### COSMETICS ###
