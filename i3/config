@@ -52,6 +52,9 @@ bindsym $mod+Shift+d exec --no-startup-id rofi -show run
 # screenshots
 bindsym Print exec --no-startup-id flameshot gui
 
+# color picker
+bindsym $mod+c exec --no-startup-id xcolor -f HEX -s clipboard
+
 # browser
 bindsym $mod+b exec --no-startup-id brave
 
