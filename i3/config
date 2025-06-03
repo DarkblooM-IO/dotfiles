@@ -166,7 +166,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # power menu
-bindsym $mod+Shift+e exec --no-startup-id rofi -show Action -modi "Action:~/.scripts/power_menu.sh"
+bindsym $mod+Shift+e exec --no-startup-id rofi -show '>' -modi ">:~/.scripts/power_menu.sh"
 
 # bar
 exec --no-startup-id bash ~/.scripts/launch_polybar.sh

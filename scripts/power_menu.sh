@@ -1,15 +1,19 @@
 #!/bin/bash
 
+powoff=" Shutdown"
+reb=" Reboot"
+logout="󰿅 Log-out"
+
 if [ $# -gt 0 ]; then
   case $@ in
-    "Shutdown") poweroff    ;;
-    "Reboot")   reboot      ;;
-    "Log-out")  i3-msg exit ;;
+    $powoff) poweroff    ;;
+    $reb)    reboot      ;;
+    $logout) i3-msg exit ;;
   esac
 
   exit 0
 fi
 
-echo "Shutdown"
-echo "Reboot"
-echo "Log-out"
+echo $powoff
+echo $reb
+echo $logout
