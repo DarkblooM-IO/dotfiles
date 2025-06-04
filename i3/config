@@ -43,7 +43,8 @@ tiling_drag modifier titlebar
 bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
-bindsym $mod+x kill
+bindsym $mod+x   kill
+bindsym Alt_L+F4 kill 
 
 # program launcher
 bindsym $mod+d       exec --no-startup-id rofi -show drun
@@ -160,6 +161,7 @@ for_window [class="^Lxappearance$"]  floating enable
 for_window [class="^PrismLauncher$"] floating enable
 for_window [class="^pico8$"]         floating enable
 for_window [class="^Signal$"]        floating enable
+for_window [class="^steam$"]         floating enable
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
