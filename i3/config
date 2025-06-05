@@ -175,6 +175,12 @@ bindsym $mod+Shift+e exec --no-startup-id rofi -show '>' -modi ">:~/.scripts/pow
 # bar
 exec --no-startup-id bash ~/.scripts/launch_polybar.sh
 
+# keyboard layout switcher
+bindsym $mod+Shift+k exec --no-startup-id rofi -show layout -modi "layout:~/.scripts/kb_layout_switch.sh"
+
+# enforce keyboard layout
+exec --no-startup-id setxkbmap fr
+
 ### AUTOSTART ###
 
 exec --no-startup-id flameshot
