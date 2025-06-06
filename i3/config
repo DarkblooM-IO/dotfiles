@@ -156,14 +156,14 @@ workspace $ws10 output HDMI-1-0 eDP-1
 assign [class="^vesktop$"] $ws10
 
 # app-specific layouts
-for_window [class="^love$"]                 floating enable
-for_window [class="^Nemo$"]                 floating enable
-for_window [class="^Lxappearance$"]         floating enable
-for_window [class="^PrismLauncher$"]        floating enable
-for_window [class="^pico8$"]                floating enable
-for_window [class="^Signal$"]               floating enable
-for_window [class="^steam$"]                floating enable
-for_window [class="^org.gnome.FileRoller$"] floating enable
+for_window [class="^love$"]          floating enable
+for_window [class="^Nemo$"]          floating enable
+for_window [class="^Lxappearance$"]  floating enable
+for_window [class="^PrismLauncher$"] floating enable
+for_window [class="^pico8$"]         floating enable
+for_window [class="^Signal$"]        floating enable
+for_window [class="^steam$"]         floating enable
+for_window [class="^Xarchiver$"]     floating enable
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
