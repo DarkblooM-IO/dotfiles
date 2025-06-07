@@ -165,6 +165,7 @@ for_window [class="^picotron$"]      floating enable
 for_window [class="^vox$"]           floating enable
 for_window [class="^Signal$"]        floating enable
 for_window [class="^steam$"]         floating enable
+for_window [class="^heroic$"]        floating enable
 for_window [class="^Xarchiver$"]     floating enable
 
 # reload the configuration file
