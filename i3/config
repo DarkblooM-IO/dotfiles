@@ -167,6 +167,7 @@ for_window [class="^Signal$"]        floating enable
 for_window [class="^steam$"]         floating enable
 for_window [class="^heroic$"]        floating enable
 for_window [class="^Xarchiver$"]     floating enable
+for_window [class="^pavucontrol$"]   floating enable
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
