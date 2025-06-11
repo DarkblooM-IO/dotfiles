@@ -160,18 +160,19 @@ workspace $ws10 output $monitor2 $monitor1
 assign [class="^vesktop$"] $ws10
 
 # app-specific layouts
-for_window [class="^love$"]          floating enable
-for_window [class="^Nemo$"]          floating enable
-for_window [class="^Lxappearance$"]  floating enable
-for_window [class="^PrismLauncher$"] floating enable
-for_window [class="^pico8$"]         floating enable
-for_window [class="^picotron$"]      floating enable
-for_window [class="^vox$"]           floating enable
-for_window [class="^Signal$"]        floating enable
-for_window [class="^steam$"]         floating enable
-for_window [class="^heroic$"]        floating enable
-for_window [class="^Xarchiver$"]     floating enable
-for_window [class="^pavucontrol$"]   floating enable
+for_window [class="^love$"]              floating enable
+for_window [class="^Nemo$"]              floating enable
+for_window [class="^Lxappearance$"]      floating enable
+for_window [class="^PrismLauncher$"]     floating enable
+for_window [class="^pico8$"]             floating enable
+for_window [class="^picotron$"]          floating enable
+for_window [class="^vox$"]               floating enable
+for_window [class="^Signal$"]            floating enable
+for_window [class="^steam$"]             floating enable
+for_window [class="^heroic$"]            floating enable
+for_window [class="^Xarchiver$"]         floating enable
+for_window [class="^pavucontrol$"]       floating enable
+for_window [class="^CelesteStudio.GTK$"] floating enable
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
